@@ -242,12 +242,20 @@ lista_nombres = ["Marcos", "Laura", "Mónica", "Javier", "Celina", "Marta", "Dar
     # El método enumerate()
     # Métodos de strings o indexado
 
-# lista_m = []
-# for n in lista_nombres:
-#     if n[0] == "M":
-#         lista_m.append(n)
-#     else:
-#         continue
+lista_m = []               #opcion 1 con "string.startswith()"
+for n in lista_nombres:
+    if n.startswith("M"):
+        lista_m.append(n)
+    else:
+        continue
 
-# print(lista_m)
+print(lista_m)
 
+lista_m1 = []               #opcion 2 con "string[i]" que devuelve el caracter en el indice i del string. Luego comapara
+for n in lista_nombres:
+    if n[0]== "M":
+        lista_m1.append(n)
+    else:
+        continue
+
+print(lista_m1)
