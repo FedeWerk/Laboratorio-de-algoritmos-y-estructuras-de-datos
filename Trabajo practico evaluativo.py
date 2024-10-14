@@ -24,8 +24,13 @@ opcion="1"
 
 while opcion=="1" or opcion=="2" or opcion=="3" or opcion=="4" or opcion=="5" or opcion=="6" or opcion=="7" or opcion=="8" or opcion=="9" or opcion=="10":
     opcion=(menu())
+
+    while opcion!="1" and opcion!="2" and opcion!="3" and opcion!="4" and opcion!="5" and opcion!="6" and opcion!="7" and opcion!="8" and opcion!="9" and opcion!="10":
+        print("Has ingresado una opción inválda.\nSelecciona nuevamente: ")
+        opcion=(menu())
+
     if opcion=="1":
-        print("Ingresa el nombre de cada estudiante:")
+        print('Ingresa el nombre de cada estudiante: \n - Para finalizar la tarea escriba "fin". \n - Para ver los nombres que ha cargado escriba "repetir".')
         nombre=opcion
 
         while nombre != "Fin" and nombre !="Repetir":
