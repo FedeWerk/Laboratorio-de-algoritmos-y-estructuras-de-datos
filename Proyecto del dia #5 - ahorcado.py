@@ -10,7 +10,7 @@
 
 from random import *
 
-lista_palabras=["leopardo","ornitorrinco", "ballena", "gaviota", "anaconda", "perro", "zorro", "tucan","orangutan","hipopotamo","ardilla","canguro", "lemur"]
+lista_palabras=["camello"]#,"leopardo","ornitorrinco", "ballena", "gaviota", "anaconda", "perro", "zorro", "tucan","orangutan","hipopotamo","ardilla","canguro", "lemur"]
 vidas=6
 
 print("Hola! Vamos a jugar! Te mostraré cuántas letras tiene una palabra sorpresa y tendrás 6 vidas. Cada intento fallido te restará 1 vida, si adivinas, podrás seguir jugando.\nUna pista! Es un animal!")
@@ -46,6 +46,17 @@ while control==True:
         print(f"¡ADIVINASTE! Ganaste el juego.")
         print(f"La palabra secreta era: {palabra_secreta.upper()}")
         control=False
+
+if palabra_secreta=="camello" and control==False:
+    print("""                ,,__
+        ..  ..   / o._)                   .---.
+       /--'/--\  \-'||        .----.    .'     '.
+      /        \_/ / |      .'      '..'         '-.
+    .'\  \__\  __.'.'     .'          i-._
+      )\ |  )\ |      _.'
+     // \\ // \\
+    ||_  \\|_  \\_
+*** '--' '--'' '--'""")
 
 
 
